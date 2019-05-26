@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FC Locomotive</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/assets/site/plugins/animate/animate.css">
+    <link rel="stylesheet" href="public/assets/site/plugins/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="public/assets/site/plugins/owl/css/owl.theme.default.css">
+    <link rel="stylesheet" href="public/assets/site/plugins/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="public/assets/site/plugins/animate/animate.css">
+<!--    style.css-->
+    <link rel="stylesheet" href="public/assets/site/layout/css/style.css">
+<!--    jquery-->
+    <script src="public/assets/site/plugins/jquery/jquery-3.2.1.slim.min.js"></script>
+</head>
+<body>
+   <div id="side-menu-overlay"></div>    
+   <div class="wrapper">
+        <div id="toggle-menu">
+            <div class="text-center top-menu">
+                <h3>locomotive</h3>
+            </div>
+            <ul class="text-center">
+                <li>
+                    <a href="news.html">news</a>
+                </li>
+                <li>
+                    <a href="#">club</a>
+                </li>
+                <li>
+                    <a href="#">team</a>
+                </li>
+                <li>
+                    <a href="#">academy</a>
+                </li>
+                <li>
+                    <a href="#">matches</a>
+                </li>
+                <li>
+                    <a href="#">media</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </div>        
+        <header class="page-header">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="public/assets/site/layout/images/logo.png" alt="Logo">
+                </a>
+            </h1> 
+            <div class="container">
+                <div class="row align-items-center text-center clearfix text-right">
+                    <div class="col-8 clearfix float-left">
+                        <ul class="white-nav nav">
+                            <li>
+                                <a href="news.html">news</a>
+                            </li>
+                            <li>
+                                <a href="#">club</a>
+                            </li>
+                            <li>
+                                <a href="#">team</a>
+                            </li>
+                            <li>
+                                <a href="#">academy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 float-right clearfix">
+                        <ul class="nav-red nav">
+                            <li>
+                                <a href="#">matches</a>
+                            </li>
+                            <li>
+                                <a href="#">media</a>
+                            </li>
+                            <li>
+                                <a href="#">contact</a>
+                            </li>
+                        </ul>
+                    <div id="toggle-menu-button" class="text-right">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page-content">
+            <div class="container bg-white text-center">
+                <div class="nav-bottom">
+                    <div class="row nav-bottom-inner">
+                        <div class="col-6 clearfix">
+                            <div class="lang-selector float-left">
+                                <ul>
+                                    <li><a href="#">geo</a></li>
+                                    <li id="active"><a href="#">eng</a></li>
+                                    <li><a href="#">rus</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 clearfix">
+                            <div class="social float-right">
+                                <ul>
+                                    <li><a href="#"><img src="public/files/images/fb.png" alt="fb"></a></li>
+                                    <li><a href="#"><img src="public/files/images/utube.png" alt="utube"></a></li>
+                                    <li><a href="#"><img src="public/files/images/insta.png" alt="insta"></a></li>
+                                    <li><a href="#"><img src="public/files/images/twitter.png" alt="twitter"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-page-slide text-center">
+                    <h2 class="inner-page-title">first team</h2>
+                    <h3 class="inner-page-subtitle inner-page-subtitle--padding">team</h3>
+                </div>
+                <div class="tabs tabs--inner-page">
+                    <ul class="nav nav-tabs justify-content-center text-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <span>proleague</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span>second league</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span>academy</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container proleague">
+                    <div class="tabs tabs--proleague">
+                        <div class="proleague-header clearfix">
+                            <ul class="nav nav-tabs text-left float-left" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="fixtures" data-toggle="tab" href="#fixtures-tabpanel" role="tab" aria-controls="fixtures-tabpanel" aria-selected="true"><span>fixtures</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="results" data-toggle="tab" href="#results-tabpanel" role="tab" aria-controls="results-tabpanel" aria-selected="false"><span>results</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="academy" data-toggle="tab" href="#academy-tabpanel" role="tab" aria-controls="academy-tabpanel" aria-selected="false"><span>academy</span></a>
+                                </li>
+                            </ul>
+                            <select class="form-control competitions float-right">
+                                <option>all competitions</option>
+                                <option>all competitions</option>
+                                <option>all competitions</option>
+                                <option>all competitions</option>
+                                <option>all competitions</option>
+                                <option>all competitions</option>
+                                <option>all competitions</option>
+                            </select>
+                        </div>
+                        <div class="tab-content text-center">
+                            <div class="tab-pane fade show active" id="fixtures-tabpanel" role="tabpanel" aria-labelledby="fixtures">
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header accordion-trigger" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne" style="background-image: url(public/assets/site/layout/images/accordion-drop-icon.png)">
+                                          <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 match-type text-left">
+                                                    Friendly | 12 jan, 2017
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    Dinamo TB
+                                                    <img src="public/assets/site/layout/images/dinamo-icon.png" alt="dinamo">
+                                                </div>
+                                                <div class="col-1">
+                                                    -
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    <img src="public/assets/site/layout/images/locomotive-icon.png" alt="locomotive">
+                                                    Locomotive
+                                                </div>
+                                                <div class="col-offset-2">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-3 text-md-left">
+                                                            <div class="first-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team">
+                                                                    <img src="public/files/images/loco-team-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 text-center">
+                                                            <div class="match-stats">
+                                                                <h3 class="match-title">
+                                                                    FC LOCOMOTIVE VS. Torpedo kutaisi
+                                                                </h3>
+                                                                <div class="match-details">
+                                                                    <h3 class="match-date">
+                                                                        MAY 13
+                                                                        <span class="match-time d-block">17:00</span>
+                                                                    </h3>
+                                                                    <p class="location">
+                                                                        Mikheil Meskhi Stadium, Tbilisi
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="second-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team text-md-right">
+                                                                    <img src="public/files/images/dila-gori-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header accordion-trigger" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo" style="background-image: url(public/assets/site/layout/images/accordion-drop-icon.png)">
+                                          <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 match-type text-left">
+                                                    Friendly | 12 jan, 2017
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    Dinamo TB
+                                                    <img src="public/assets/site/layout/images/dinamo-icon.png" alt="dinamo">
+                                                </div>
+                                                <div class="col-1">
+                                                    -
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    <img src="public/assets/site/layout/images/locomotive-icon.png" alt="locomotive">
+                                                    Locomotive
+                                                </div>
+                                                <div class="col-offset-2">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-3 text-md-left">
+                                                            <div class="first-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team">
+                                                                    <img src="public/files/images/loco-team-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 text-center">
+                                                            <div class="match-stats">
+                                                                <h3 class="match-title">
+                                                                    FC LOCOMOTIVE VS. Torpedo kutaisi
+                                                                </h3>
+                                                                <div class="match-details">
+                                                                    <h3 class="match-date">
+                                                                        MAY 13
+                                                                        <span class="match-time d-block">17:00</span>
+                                                                    </h3>
+                                                                    <p class="location">
+                                                                        Mikheil Meskhi Stadium, Tbilisi
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="second-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team text-md-right">
+                                                                    <img src="public/files/images/dila-gori-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header accordion-trigger" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree" style="background-image: url(public/assets/site/layout/images/accordion-drop-icon.png)">
+                                          <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 match-type text-left">
+                                                    Friendly | 12 jan, 2017
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    Dinamo TB
+                                                    <img src="public/assets/site/layout/images/dinamo-icon.png" alt="dinamo">
+                                                </div>
+                                                <div class="col-1">
+                                                    -
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    <img src="public/assets/site/layout/images/locomotive-icon.png" alt="locomotive">
+                                                    Locomotive
+                                                </div>
+                                                <div class="col-offset-2">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-3 text-md-left">
+                                                            <div class="first-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team">
+                                                                    <img src="public/files/images/loco-team-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 text-center">
+                                                            <div class="match-stats">
+                                                                <h3 class="match-title">
+                                                                    FC LOCOMOTIVE VS. Torpedo kutaisi
+                                                                </h3>
+                                                                <div class="match-details">
+                                                                    <h3 class="match-date">
+                                                                        MAY 13
+                                                                        <span class="match-time d-block">17:00</span>
+                                                                    </h3>
+                                                                    <p class="location">
+                                                                        Mikheil Meskhi Stadium, Tbilisi
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="second-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team text-md-right">
+                                                                    <img src="public/files/images/dila-gori-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header accordion-trigger" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" id="headingFour" style="background-image: url(public/assets/site/layout/images/accordion-drop-icon.png)">
+                                          <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 match-type text-left">
+                                                    Friendly | 12 jan, 2017
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    Dinamo TB
+                                                    <img src="public/assets/site/layout/images/dinamo-icon.png" alt="dinamo">
+                                                </div>
+                                                <div class="col-1">
+                                                    -
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    <img src="public/assets/site/layout/images/locomotive-icon.png" alt="locomotive">
+                                                    Locomotive
+                                                </div>
+                                                <div class="col-offset-2">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-3 text-md-left">
+                                                            <div class="first-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team">
+                                                                    <img src="public/files/images/loco-team-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 text-center">
+                                                            <div class="match-stats">
+                                                                <h3 class="match-title">
+                                                                    FC LOCOMOTIVE VS. Torpedo kutaisi
+                                                                </h3>
+                                                                <div class="match-details">
+                                                                    <h3 class="match-date">
+                                                                        MAY 13
+                                                                        <span class="match-time d-block">17:00</span>
+                                                                    </h3>
+                                                                    <p class="location">
+                                                                        Mikheil Meskhi Stadium, Tbilisi
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="second-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team text-md-right">
+                                                                    <img src="public/files/images/dila-gori-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="results-tabpanel" role="tabpanel" aria-labelledby="results">
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header accordion-trigger" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne" style="background-image: url(public/assets/site/layout/images/accordion-drop-icon.png)">
+                                          <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 match-type text-left">
+                                                    Friendly | 12 jan, 2017
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    Dinamo TB
+                                                    <img src="public/assets/site/layout/images/dinamo-icon.png" alt="dinamo">
+                                                </div>
+                                                <div class="col-1">
+                                                    -
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    <img src="public/assets/site/layout/images/locomotive-icon.png" alt="locomotive">
+                                                    Locomotive
+                                                </div>
+                                                <div class="col-offset-2">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-3 text-md-left">
+                                                            <div class="first-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team">
+                                                                    <img src="public/files/images/loco-team-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 text-center">
+                                                            <div class="match-stats">
+                                                                <h3 class="match-title">
+                                                                    FC LOCOMOTIVE VS. Torpedo kutaisi
+                                                                </h3>
+                                                                <div class="match-details">
+                                                                    <h3 class="match-date">
+                                                                        MAY 13
+                                                                        <span class="match-time d-block">17:00</span>
+                                                                    </h3>
+                                                                    <p class="location">
+                                                                        Mikheil Meskhi Stadium, Tbilisi
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="second-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team text-md-right">
+                                                                    <img src="public/files/images/dila-gori-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header accordion-trigger" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo" style="background-image: url(public/assets/site/layout/images/accordion-drop-icon.png)">
+                                          <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 match-type text-left">
+                                                    Friendly | 12 jan, 2017
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    Dinamo TB
+                                                    <img src="public/assets/site/layout/images/dinamo-icon.png" alt="dinamo">
+                                                </div>
+                                                <div class="col-1">
+                                                    -
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    <img src="public/assets/site/layout/images/locomotive-icon.png" alt="locomotive">
+                                                    Locomotive
+                                                </div>
+                                                <div class="col-offset-2">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-3 text-md-left">
+                                                            <div class="first-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team">
+                                                                    <img src="public/files/images/loco-team-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 text-center">
+                                                            <div class="match-stats">
+                                                                <h3 class="match-title">
+                                                                    FC LOCOMOTIVE VS. Torpedo kutaisi
+                                                                </h3>
+                                                                <div class="match-details">
+                                                                    <h3 class="match-date">
+                                                                        MAY 13
+                                                                        <span class="match-time d-block">17:00</span>
+                                                                    </h3>
+                                                                    <p class="location">
+                                                                        Mikheil Meskhi Stadium, Tbilisi
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="second-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team text-md-right">
+                                                                    <img src="public/files/images/dila-gori-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header accordion-trigger" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree" style="background-image: url(public/assets/site/layout/images/accordion-drop-icon.png)">
+                                          <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 match-type text-left">
+                                                    Friendly | 12 jan, 2017
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    Dinamo TB
+                                                    <img src="public/assets/site/layout/images/dinamo-icon.png" alt="dinamo">
+                                                </div>
+                                                <div class="col-1">
+                                                    -
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    <img src="public/assets/site/layout/images/locomotive-icon.png" alt="locomotive">
+                                                    Locomotive
+                                                </div>
+                                                <div class="col-offset-2">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-3 text-md-left">
+                                                            <div class="first-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team">
+                                                                    <img src="public/files/images/loco-team-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 text-center">
+                                                            <div class="match-stats">
+                                                                <h3 class="match-title">
+                                                                    FC LOCOMOTIVE VS. Torpedo kutaisi
+                                                                </h3>
+                                                                <div class="match-details">
+                                                                    <h3 class="match-date">
+                                                                        MAY 13
+                                                                        <span class="match-time d-block">17:00</span>
+                                                                    </h3>
+                                                                    <p class="location">
+                                                                        Mikheil Meskhi Stadium, Tbilisi
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="second-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team text-md-right">
+                                                                    <img src="public/files/images/dila-gori-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header accordion-trigger" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" id="headingFour" style="background-image: url(public/assets/site/layout/images/accordion-drop-icon.png)">
+                                          <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-2 match-type text-left">
+                                                    Friendly | 12 jan, 2017
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    Dinamo TB
+                                                    <img src="public/assets/site/layout/images/dinamo-icon.png" alt="dinamo">
+                                                </div>
+                                                <div class="col-1">
+                                                    -
+                                                </div>
+                                                <div class="col-3 team-name">
+                                                    <img src="public/assets/site/layout/images/locomotive-icon.png" alt="locomotive">
+                                                    Locomotive
+                                                </div>
+                                                <div class="col-offset-2">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-3 text-md-left">
+                                                            <div class="first-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team">
+                                                                    <img src="public/files/images/loco-team-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 text-center">
+                                                            <div class="match-stats">
+                                                                <h3 class="match-title">
+                                                                    FC LOCOMOTIVE VS. Torpedo kutaisi
+                                                                </h3>
+                                                                <div class="match-details">
+                                                                    <h3 class="match-date">
+                                                                        MAY 13
+                                                                        <span class="match-time d-block">17:00</span>
+                                                                    </h3>
+                                                                    <p class="location">
+                                                                        Mikheil Meskhi Stadium, Tbilisi
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="second-team">
+                                                                <div class="gray-bg">
+                                                                </div>
+                                                                <div class="team text-md-right">
+                                                                    <img src="public/files/images/dila-gori-logo.png" alt="team logo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="academy-tabpanel" role="tabpanel" aria-labelledby="academy">
+                                <div class="table-responsive">
+                                    <table class="table homepage-league-table text-center">
+                                        <thead>
+                                            <tr class="upper-table-header">
+                                                <th colspan="11">
+                                                    league table
+                                                </th>
+                                            </tr>
+                                            <tr class="sub-header text-left">
+                                                <th>Pos</th>
+                                                <th>Club</th>
+                                                <th>P</th>
+                                                <th>W</th>
+                                                <th>D</th>
+                                                <th>L</th>
+                                                <th>PTS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-left">
+                                            <tr>
+                                                <td>1</td>
+                                                <td>FC Locomotive</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Torpedo Kutaisi</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Dinamo Tbilisi</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Merani</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>FC Dila Gori</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>FC Samtredia</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>FC Sioni Bolnisi</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>FC Zestafoni</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Shuqura</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>Tskhinvali</td>
+                                                <td>11</td>
+                                                <td>2</td>
+                                                <td>8</td>
+                                                <td>4</td>
+                                                <td>37</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsors sponsors--gray text-center">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="public/assets/site/layout/images/silk-logo.png" alt="silk">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="public/assets/site/layout/images/natakhtari.png" alt="silk">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="public/assets/site/layout/images/gff-logo.png" alt="gff">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="public/assets/site/layout/images/srg-logo.png" alt="srg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </main>
+    <foooter class="page-footer">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="foot-logo">
+                        <img src="public/assets/site/layout/images/logo.png" alt="logo">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-footer text-left">
+                            <h4>Join us on:</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="public/assets/site/layout/images/facebook.png" alt="fb">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="public/assets/site/layout/images/facebook.png" alt="fb">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="public/assets/site/layout/images/facebook.png" alt="fb">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="public/assets/site/layout/images/facebook.png" alt="fb">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 contact text-md-right">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#">12 Chavchavadze Str. Tbilisi, Georgia</a></li>
+                            <li><a href="#">+995 32 2 45 46 47</a></li>
+                            <li><a href="#">contact@fcloco.ge</a></li>
+                        </ul>
+                        <div class="mobility-logo">
+                            <a href="#"><img src="public/assets/site/layout/images/mobility-logo.png" alt="mobility"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </foooter>
+    </div>
+<!--    plugins-->
+    <script src="public/assets/site/plugins/owl/js/owl.carousel.min.js"></script>
+    <script src="public/assets/site/layout/js/playerslider.js"></script>
+    <script src="public/assets/site/plugins/popper/popper.min.js"></script>
+    <script src="public/assets/site/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!--    custom-->
+    <script src="public/assets/site/layout/js/togglemenu.js"></script>
+</body>
+</html>
